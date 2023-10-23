@@ -33,4 +33,4 @@ La necesidad de mejorar la eficiencia y la calidad del servicio de LamboPe es ev
 
 
 
-!![Imagen Referencial ](https://utpedupe-my.sharepoint.com/:i:/g/personal/u19221872_utp_edu_pe/EarX7vaxg0VCrcReOIJ8P1oBY2RQjS4LBTFpU0Vl2mzoeQ?e=Ki2PWI)
+!![Imagen Referencial ](https://i.imgur.com/k57JhZN.png)
