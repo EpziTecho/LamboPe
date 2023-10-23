@@ -31,7 +31,7 @@ Los vehículos desempeñan un papel fundamental en la vida moderna, siendo esenc
 La necesidad de mejorar la eficiencia y la calidad del servicio de LamboPe es evidente, especialmente en el contexto actual, marcado por desafíos como la pandemia de COVID-19. La implementación de este aplicativo busca aumentar los ingresos de la empresa y hacer que LamboPe sea la opción preferida de alquiler de vehículos, ofreciendo un proceso de alquiler más eficiente y una experiencia de cliente mejorada.
 
 
-
+## Imagenes
 
 <table>
   <tr>
