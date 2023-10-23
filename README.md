@@ -33,6 +33,6 @@ La necesidad de mejorar la eficiencia y la calidad del servicio de LamboPe es ev
 
 
 
-!![Imagen Referencial ](https://i.imgur.com/k57JhZN.png) !![Imagen Referencial ](https://i.imgur.com/U04mTHy.png) 
-!![Imagen Referencial ](https://i.imgur.com/Tq3TOF6.png) !![Imagen Referencial ](https://i.imgur.com/ngsLGO6.png)
-!![Imagen Referencial ](https://i.imgur.com/zTFKDbk.png)
+![Imagen Referencial ](https://i.imgur.com/k57JhZN.png) ![Imagen Referencial ](https://i.imgur.com/U04mTHy.png) 
+![Imagen Referencial ](https://i.imgur.com/Tq3TOF6.png) ![Imagen Referencial ](https://i.imgur.com/ngsLGO6.png)
+![Imagen Referencial ](https://i.imgur.com/zTFKDbk.png)
