@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="781e0c0e-7e80-4abf-a349-dd21ddfed4e4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     reserva.`idreserva` AS reserva_idreserva,
+     reserva.`matricula_vehiculo` AS reserva_matricula_vehiculo,
+     reserva.`dni_cliente` AS reserva_dni_cliente,
+     reserva.`dni_trabajador` AS reserva_dni_trabajador,
+     reserva.`idextra` AS reserva_idextra,
+     reserva.`tipo_tarifa` AS reserva_tipo_tarifa,
+     reserva.`fecha_reserva` AS reserva_fecha_reserva,
+     reserva.`fecha_recogida` AS reserva_fecha_recogida,
+     reserva.`fecha_devolucion` AS reserva_fecha_devolucion,
+     reserva.`costo_alquiler` AS reserva_costo_alquiler,
+     reserva.`estado` AS reserva_estado
+FROM
+     `reserva` reserva]]>
+	</queryString>
+	<field name="reserva_idreserva" class="java.lang.Integer"/>
+	<field name="reserva_matricula_vehiculo" class="java.lang.String"/>
+	<field name="reserva_dni_cliente" class="java.lang.String"/>
+	<field name="reserva_dni_trabajador" class="java.lang.String"/>
+	<field name="reserva_idextra" class="java.lang.Integer"/>
+	<field name="reserva_tipo_tarifa" class="java.lang.String"/>
+	<field name="reserva_fecha_reserva" class="java.sql.Date"/>
+	<field name="reserva_fecha_recogida" class="java.sql.Date"/>
+	<field name="reserva_fecha_devolucion" class="java.sql.Date"/>
+	<field name="reserva_costo_alquiler" class="java.math.BigDecimal"/>
+	<field name="reserva_estado" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="123" y="15" width="308" height="43" uuid="17b61f03-97fe-42ef-985f-c24b2822f235"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INFORME RESERVA]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="26c56c39-d379-4f4d-bbb8-7ef2f6c00a84"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="65" height="20" uuid="5d347924-f257-4c0f-aaae-77ca588088b3"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="2" width="58" height="20" uuid="4a636954-fbc3-473f-8130-d5df4cc05ef8"/>
+				<text><![CDATA[placa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="123" y="2" width="60" height="20" uuid="1d12d10b-0a65-420d-b0aa-f989233f7900"/>
+				<text><![CDATA[DNI Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="2" width="55" height="20" uuid="09f81c2f-b291-48f8-b695-27996317d1b2"/>
+				<text><![CDATA[Extra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="2" width="63" height="20" uuid="b9b4fb3d-b8f2-42d9-ac2a-8d6d985ba609"/>
+				<text><![CDATA[Tarifa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="2" width="60" height="20" uuid="750afb57-4471-4065-adda-916ca7431160"/>
+				<text><![CDATA[Reserva]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="2" width="59" height="20" uuid="8ab8fbdb-5c0b-48c8-84b0-0c26f342dee9"/>
+				<text><![CDATA[Recojo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="2" width="51" height="20" uuid="8c96fd18-1785-4da1-9c09-4797e44c976c"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="2" width="61" height="20" uuid="f10ab1c4-2bf8-4403-8102-582947c0d446"/>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="65" height="20" uuid="3e07d369-7cca-4321-8b45-8c8fb69970a9"/>
+				<textFieldExpression><![CDATA[$F{reserva_idreserva}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="0" width="60" height="20" uuid="06ab7c26-40af-4042-8cac-0c37e13de22c"/>
+				<textFieldExpression><![CDATA[$F{reserva_dni_cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="186" y="0" width="55" height="20" uuid="43cf81e6-b061-4b45-ba8c-31391238faad"/>
+				<textFieldExpression><![CDATA[$F{reserva_idextra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="65" y="0" width="58" height="20" uuid="bfd1821a-4f65-4f26-8af3-f20291f7d2d4"/>
+				<textFieldExpression><![CDATA[$F{reserva_matricula_vehiculo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="0" width="63" height="20" uuid="f3816830-7170-45d6-ac12-ac04b5b8ee4d"/>
+				<textFieldExpression><![CDATA[$F{reserva_tipo_tarifa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="304" y="0" width="60" height="20" uuid="13bb6026-8d62-4cca-b98c-4321b96b78ae"/>
+				<textFieldExpression><![CDATA[$F{reserva_fecha_reserva}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="364" y="0" width="59" height="20" uuid="75f700c7-6152-4574-a179-081fca2700b3"/>
+				<textFieldExpression><![CDATA[$F{reserva_fecha_recogida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="423" y="0" width="51" height="20" uuid="b572661b-b1a9-4f68-b27a-d04cf1578bd6"/>
+				<textFieldExpression><![CDATA[$F{reserva_costo_alquiler}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="61" height="20" uuid="7a65ecde-5e6f-4260-8562-670e5737fd66"/>
+				<textFieldExpression><![CDATA[$F{reserva_estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="11" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="408" y="5" width="100" height="20" uuid="d18aed34-7811-4c4a-9c0c-854fe7ee407b"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
